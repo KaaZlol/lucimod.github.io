@@ -1,0 +1,529 @@
+:root{
+    --red: #ff2e63;
+    --black: #252a34;
+    --blue: #08d9d6;
+    --white: #eaeaea;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/** Menu de Navegación **/
+#header{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .logo-box{
+    margin-left: 20px
+}
+
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black)
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+
+.menu .list-container .lists{
+    display: flex;
+}
+
+.menu .list-container .lists li{
+    list-style: none;
+}
+
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+.menu .list-container .lists li a.activo{
+    background: var(--red);
+    color: #fff;
+}
+
+.menu .list-container .lists li a:hover{
+    background: var(--red);
+    color: #fff;
+}
+
+/** IMG Header **/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/unknown.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img-header .welcome > button:hover{
+    background: var(--blue);
+}
+
+/** Acerca de Nosotros **/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: vat(--black);
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 10px 0px;
+}
+
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+}
+
+.acerca-de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.acerca-de .info-container .about-gallery img{
+    width: calc(33.33% - 10px);
+    height: 300px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.acerca-de .info-container .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.acerca-de .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.acerca-de .info-container .about-more button:hover{
+    background: var(--blue);
+}
+
+/** Nuestros Proyectos **/
+
+.our-projects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/img-2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-projects .deg-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.our-projects .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.our-projects .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-projects .container-project .project-title{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.our-projects .container-project .project-title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.our-projects .container-project .project-title hr{
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.our-projects .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.our-projects .container-project .project-img img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.our-projects .project-img .download{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.our-projects .project-img .download button{
+    width: 120px;
+    height: 40px;
+    background: var(--red);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.our-projects .project-img .download button:hover{
+    background: var(--blue);
+}
+
+/** Testimonios **/
+
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.testimonios .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.testimonios .testimonios-title hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: var(--black);
+    border: none;
+}
+
+.testimonios .box-testimonios{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonios .box-testimonios .card-testimonio{
+    width: 45%;
+    margin: 20px;
+}
+
+.card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.testimonios-text{
+    width: 100%;
+    border: 2px solid var(--red);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.testimonios-text h4{
+    color:var(--red);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonios-text p{
+    font-size: 19px;
+    color: var(--black);
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+
+@media only screen and (max-width:890px){
+    .testimonios .box-testimonio .card-testimonio .card-img img{width: 200px; height: 200px;}
+    .testimonios .box-testimonio .card-testimonio{width: 100%;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 25px;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
+}
+
+/** Footer **/
+
+
+.footer-content{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid #fff;
+    padding: 15px;
+}
+
+.footer-title h2{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+.footer-title hr{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.formulario-content{
+    width: 90%;
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid var(--red);
+    margin: 50px auto;
+    padding: 30px;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#formulario label{
+    text-align: center;
+    color: var(--black);
+}
+
+footer{
+    background: #f5576c;
+    color: #ffffff;
+ }
+ 
+ .form{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .input{
+     background: transparent;
+     border: 0;
+     color: #ffffff;
+     outline: none;
+     border: 1px solid #ffffff;
+     padding: 20px 10px;
+     margin: auto;
+ }
+ 
+ .input::placeholder{
+     color: #ffffff;
+     font-family: 'Raleway'
+ }
+ 
+ input[type="text"], input[type="email"]{
+     display: inline-block;
+     width: 49%;
+     margin-bottom: 30px;
+ }
+ 
+ .form textarea{
+     width: 100%;
+     margin-bottom: 15px;
+ }
+ 
+ input[type="submit"]{
+     width: 120px;
+     text-align: center;
+     padding: 14px 0;
+ }
+ 
+ input[type="submit"]:hover{
+     cursor: pointer;
+     color:tomato;
+     background: #ffffff;
+ }
+
+ a{
+     text-decoration: none;
+     margin-bottom: auto;
+ }
+
+
+
+
+
+ @media only screen and (max-width:900px){
+    .footer .formulario-content{width: 85%; padding:20px;}
+    .footer .formulario-content #formulario input{width: 100%;}
+    .footer .formulario-content #formulario textarea{width: 100%;}
+}
+@media only screen and (max-width:590px){
+    .footer .formulario-content{width: 95%; padding:20px;}
+    .footer .formulario-content #formulario label{font-size: 17px;}
+    .footer .formulario-content #formulario input{width: 100%; font-size: 17px;}
+    .footer .formulario-content #formulario textarea{width: 100%;}
+    .footer .formulario-content #formulario .mensaje-form p{font-size: 17px;}
+    .footer .footer-text{width: 100%; padding: 0px 30px;}
+    .footer .footer-text p{font-size: 17px;}
+}
